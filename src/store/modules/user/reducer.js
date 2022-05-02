@@ -66,3 +66,12 @@ const produtos = [
       "https://cdn.awsli.com.br/1000x1000/31/31979/produto/57597261/c3258574c0.jpg",
   },
 ];
+
+const produtosReducer = (state = produtos, action) => {
+  switch (action.type) {
+    default:
+      return state;
+  }
+};
+
+export default produtosReducer;

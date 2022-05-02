@@ -1,9 +1,11 @@
-import "./App.css";
+import CardProdutos from "./components/CardProdutos";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header"></header>
+      <header className="App-header">
+        <CardProdutos />
+      </header>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-
+import Button from "../Button";
 const CardProdutos = () => {
   const produto = useSelector((state) => state.produto);
 
@@ -11,7 +11,7 @@ const CardProdutos = () => {
           <h3>{cada.name}</h3>
           <span>{cada.descricao}</span>
           <p>{cada.price}</p>
-          <button>EU QUERO!</button>
+          <Button>Eu quero!!</Button>
         </div>
       ))}
     </div>

@@ -9,7 +9,9 @@ const CardProdutos = () => {
         <div key={index}>
           <img src={cada.image} alt={cada.name} />
           <h3>{cada.name}</h3>
+          <span>{cada.descricao}</span>
           <p>{cada.price}</p>
+          <button>EU QUERO!</button>
         </div>
       ))}
     </div>

@@ -1,11 +1,9 @@
-import CardProdutos from "./components/CardProdutos";
+import Routes from "./Routes";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <CardProdutos />
-      </header>
+    <div>
+      <Routes />
     </div>
   );
 }

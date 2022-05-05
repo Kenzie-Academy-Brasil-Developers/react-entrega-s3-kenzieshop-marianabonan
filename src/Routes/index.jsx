@@ -1,6 +1,6 @@
 import { Route, Switch } from "react-router-dom";
 import Home from "../pages/home";
-import Carrinho from "../pages/carrinho";
+import Carrinho from "../pages/cart";
 
 const Routes = () => {
   return (

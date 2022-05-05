@@ -1,9 +1,11 @@
-import CardProdutos from "../../components/CardProdutos";
+import Header from "../../components/Header";
+import Store from "../../components/Store";
 
 const Home = () => {
   return (
     <>
-      <CardProdutos />;
+      <Header />
+      <Store />
     </>
   );
 };

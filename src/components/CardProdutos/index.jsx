@@ -1,20 +1,24 @@
-import { useSelector } from "react-redux";
-import Button from "../Button";
-const CardProdutos = () => {
-  const produto = useSelector((state) => state.produto);
+import { useDispatch } from "react-redux";
+import { BsCartPlus } from "react-icons/bs";
+import formatValue from "../../utils/formatValue";
+import { addToCartThunk } from "../../store/modules/cart/thunks";
+import { Container } from "./styles";
 
+const CardProdutos = ({ product }) => {
+  const dispatch = useDispatch();
   return (
-    <div>
-      {produto.map((cada, index) => (
-        <div key={index}>
-          <img src={cada.image} alt={cada.name} />
-          <h3>{cada.name}</h3>
-          <span>{cada.descricao}</span>
-          <p>{cada.price}</p>
-          <Button>Eu quero!!</Button>
-        </div>
-      ))}
-    </div>
+    <Container>
+      <img src={product.image} alt={product.name} />
+      <h3>{product.name}</h3>
+      <span>{product.descricao}</span>
+      <section>
+        <p>{formatValue(product.price)}</p>
+
+        <button onClick={() => dispatch(addToCartThunk(product))}>
+          <BsCartPlus />
+        </button>
+      </section>
+    </Container>
   );
 };
 

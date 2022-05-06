@@ -1,4 +1,7 @@
 import { useSelector } from "react-redux";
+import formatValue from "../../utils/formatValue";
+import { Container } from "./style";
+
 const TotalPrice = () => {
   const { cart } = useSelector((state) => state);
   const valor = cart.reduce(
@@ -6,12 +9,11 @@ const TotalPrice = () => {
     0
   );
 
-  console.log(valor);
   return (
-    <div>
-      <h4>Valor Total</h4>
-      <p>{valor}</p>
-    </div>
+    <Container>
+      <h3>Valor Total:</h3>
+      <p>{formatValue(valor)}</p>
+    </Container>
   );
 };
 

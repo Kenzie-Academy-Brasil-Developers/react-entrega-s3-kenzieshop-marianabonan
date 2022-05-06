@@ -11,16 +11,21 @@ export default createGlobalStyle`
 ol, ul,li {
     list-style: none;
 }
+
 img{
     height: 390px;
     width: 290px;
     
 }
 h1, h3{
-    font-family: fonteGatito;
+    font-family: "FonteGatito";
 }
 h3{
     font-size: 25px;
     color: red;
+}
+@font-face {
+    font-family: "FonteGatito" ;
+    src: url(${fonteGatito});
 }
 `;

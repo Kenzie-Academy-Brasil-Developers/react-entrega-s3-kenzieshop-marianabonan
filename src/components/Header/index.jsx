@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <Container>
-      <h1 className="title"> KENZIE C.A.T. </h1>
+      <h1 className="title"> Kenzie Cat </h1>
       <section>
         <button className="icons_header" onClick={handleCard}>
           <GiShoppingBag />
